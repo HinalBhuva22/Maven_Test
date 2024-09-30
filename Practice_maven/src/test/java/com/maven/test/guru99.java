@@ -15,7 +15,7 @@ public class guru99 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://demo.guru99.com/test/delete_customer.php");

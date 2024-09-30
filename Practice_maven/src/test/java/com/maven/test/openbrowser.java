@@ -10,7 +10,8 @@ public class openbrowser {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		WebDriverManager.chromedriver().setup();
+		// WebDriverManager.chromedriver().setup(); No need to write this coz
+		 // <version>4.25.0</version> selenim version
 		WebDriver driver = new ChromeDriver();
 		
 
