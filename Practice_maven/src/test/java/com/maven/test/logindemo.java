@@ -12,7 +12,7 @@ public class logindemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		WebDriverManager.chromedriver().setup();
+		// WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.fb.com");
@@ -27,6 +27,7 @@ public class logindemo {
 		pass.sendKeys("pass123");
 		login.click();
 		
+		System.out.println("error printed");
 		
 				
 
