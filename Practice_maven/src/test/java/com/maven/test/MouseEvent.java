@@ -1,3 +1,5 @@
+package com.maven.test;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,7 +22,7 @@ public class MouseEvent {
             driver.manage().window().maximize();
 
             // Locate the source element for drag and drop
-            WebElement from = driver.findElement(By.xpath("//li[@id='credit2']/a")); // Modify the XPath based on the actual element
+            WebElement from = driver.findElement(By.xpath("//*[@id=\"credit2\"]/a")); // Modify the XPath based on the actual element
 
             // Locate the target element for drag and drop
             WebElement to = driver.findElement(By.id("bank"));
@@ -37,13 +39,16 @@ public class MouseEvent {
             
             
 
-        } catch (Exception e) {
+       } catch (Exception e) {
             e.printStackTrace();
         } finally {
             // Close the browser
+        	
+        	
             driver.quit();
             
             
         }
     }
+
 }
