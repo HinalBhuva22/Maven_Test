@@ -24,11 +24,20 @@ public class guru99 {
  
 		
 		driver.findElement(By.name("cusid")).sendKeys("12345");
+		
+		
+		
+		
+		
+		
 		driver.findElement(By.name("submit")).click();
 		Alert alert = driver.switchTo().alert();
 		alert.accept();	
 		Alert alert1 = driver.switchTo().alert();
+	
 		alert.accept();	
+		
+		
 		
 		
 	}
